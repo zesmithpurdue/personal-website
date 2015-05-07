@@ -1,14 +1,9 @@
 /* CSS used here will be applied after bootstrap.css */
+/* CSS used here will be applied after bootstrap.css */
 .navbar-collapse {
   text-align:center;
   }
 .navbar-nav {
-    display:inline-block;
-    float:none;
-  }
-  
- .navbar-brand {
-	text-align:center;
     display:inline-block;
     float:none;
   }
