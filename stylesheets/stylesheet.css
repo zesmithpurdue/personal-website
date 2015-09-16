@@ -64,8 +64,8 @@ a:hover {
 }
 
 header {
-  padding-top: 35px;
-  padding-bottom: 25px;
+  padding-top: 10px;
+  padding-bottom: 15px;
 }
 
 header h1 {
@@ -90,7 +90,7 @@ header h2 {
 }
 
 .inner {
-  width: 720px;
+  width: 920px;
   margin: 0 auto;
 }
 

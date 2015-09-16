@@ -1,25 +1,60 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 	<head>
-		<meta charset='utf-8'>
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
-		<link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+		<title>here be dragons</title>
+
+		<!-- Bootstrap -->
 		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen">
 		<link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print">
 		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/extra.css">
-		<link rel="stylesheet" href="css/ekko-lightbox.css">
-		<link rel="stylesheet" href="css/dark.css">		
+		<link rel="stylesheet" href="css/custom.css"> 
+		<link rel="stylesheet" type="text/css" href="css/fresco.css">		
+
+		<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+		<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
 		<!--[if lt IE 9]>
-		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+		<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
-		<title>Zachary Smith</title>
+		
+		<style type="text/css">
+            div.row {
+                margin-bottom: 15px;
+            }
+
+            body {
+                padding-bottom: 50px;
+            }
+
+            div.top-header {
+                margin-bottom:100px;
+            }
+
+            h3.page-header {
+                margin-top: 50px;
+            }
+
+            figure {
+                position: relative;
+            }
+
+			code {
+				white-space: pre-wrap;       /* css-3 */
+				white-space: -moz-pre-wrap;  /* Mozilla, since 1999 */
+				white-space: -pre-wrap;      /* Opera 4-6 */
+				white-space: -o-pre-wrap;    /* Opera 7 */
+				word-wrap: break-word;       /* Internet Explorer 5.5+ */
+			}
+        </style> 
+		
+		
 	</head>
-
 	<body>
-	<div id="container" align="center">
-
 		<nav class="navbar navbar-default">
 			<div class="container">
 				<!-- Brand and toggle get grouped for better mobile display -->
@@ -29,26 +64,29 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
-					</button>						
+					</button>
+					<a class="navbar-brand" class="active" href="http://www.zacharysmith.science">Zachary Smith</a>
 				</div>
+
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-                      <li><a href="http://www.zacharysmith.science">Home</a></li>
+					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Solar Cars<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="http://www.zacharysmith.science/celeritas">Celeritas</a></li>
 								<li><a href="http://www.zacharysmith.science/navitas">Navitas</a></li>
 							</ul>
-						</li><li class="dropdown">
+						<li class="dropdown">
 							<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Embedded Systems Projects<span class="caret"></span></a>
 							<ul class="dropdown-menu" role="menu">
 								<li><a href="http://www.zacharysmith.science/celeritas-bms">Battery Monitoring System - Celeritas</a></li>
 								<li><a href="http://www.zacharysmith.science/navitas-lcu">Light Control Unit - Navitas</a></li>
 							</ul>
-						</li><li><a href="http://www.zacharysmith.science/works-of-navitas">Art</a></li>
-						<li><a href="http://www.zacharysmith.science/resume">Résumé</a></li>				
+						<li><a href="http://www.zacharysmith.science/works-of-navitas">Art</a></li>
+						<li><a href="http://www.zacharysmith.science/resume">Résumé<span class="sr-only">(current)</span></a></li>
+							
+						</li>
 					</ul>
 				</div><!-- /.navbar-collapse -->
 			</div><!-- /.container-fluid -->
@@ -57,6 +95,7 @@
 	
 		<!-- 16:9 aspect ratio -->
 		
+		<div id="container" align="center">
 			<div class="inner">
 				<header>
 					<h1 align="center">Zachary Smith</h1>
@@ -67,14 +106,14 @@
 				Racing</a> has appeared in <a href="http://news.nationalgeographic.com/news/energy/2012/08/pictures/120817-shell-eco-marathon-2012/">National Geographic</a>,
 				<a href="http://www.engadget.com/2011/04/25/purdues-celeritas-car-scores-2-200mpg-from-the-sun-wins-shell/">Engadget</a>,
 				and <a href="http://www.pcmag.com/article2/0,2817,2417115,00.asp">PC Magazine</a>. </p>
-				<div class="well well-sm">
-				<a href="images/celeritas.png">
-					<img src="images/celeritas.png"></img>
-				</a>
-				<p><font size="2">Celeritas, making it's 2,325 MPG-E winning run. (Photography courtesy of National Geographic)</font>  </p>
-				</div>
-
 				
+				<a 	href="images/celeritas.png"
+					class="fresco"
+					data-fresco-caption="Celeritas, making it's 2,325 MPG-E winning run. (Photography courtesy of National Geographic)"
+					data-fresco-group="header">
+					<img src="images/celeritas.png" class="img-responsive" class="col-sm-12" />
+				</a>
+
 				<div class="embed-responsive embed-responsive-16by9">
 					<iframe class="embed-responsive-item" src="https://www.youtube.com/embed/M7UxcikAnH8" allowfullscreen align="center"></iframe>
 				</div>			
@@ -83,63 +122,9 @@
 
 		
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
+		<script type="text/javascript" src="js/fresco.js"></script>
 		<script src="js/bootstrap.min.js"></script>
-		<script src="js/ekko-lightbox.js"></script>
-		 <script type="text/javascript">
-            $(document).ready(function ($) {
-                // delegate calls to data-toggle="lightbox"
-                $(document).delegate('*[data-toggle="lightbox"]:not([data-gallery="navigateTo"])', 'click', function(event) {
-                    event.preventDefault();
-                    return $(this).ekkoLightbox({
-                        onShown: function() {
-                            if (window.console) {
-                                return console.log('Checking our the events huh?');
-                            }
-                        },
-						onNavigate: function(direction, itemIndex) {
-                            if (window.console) {
-                                return console.log('Navigating '+direction+'. Current item: '+itemIndex);
-                            }
-						}
-                    });
-                });
-
-                //Programatically call
-                $('#open-image').click(function (e) {
-                    e.preventDefault();
-                    $(this).ekkoLightbox();
-                });
-                $('#open-youtube').click(function (e) {
-                    e.preventDefault();
-                    $(this).ekkoLightbox();
-                });
-
-				// navigateTo
-                $(document).delegate('*[data-gallery="navigateTo"]', 'click', function(event) {
-                    event.preventDefault();
-                    return $(this).ekkoLightbox({
-                        onShown: function() {
-
-							var a = this.modal_content.find('.modal-footer a');
-							if(a.length > 0) {
-
-								a.click(function(e) {
-
-									e.preventDefault();
-									this.navigateTo(2);
-
-								}.bind(this));
-
-							}
-
-                        }
-                    });
-                });
-
-
-            });
-        </script>
 	</body>
 </html>
